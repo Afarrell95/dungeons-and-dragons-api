@@ -1,5 +1,5 @@
 let btn = document.querySelector('button');
-let monsterSearch = document.querySelector('.monster-search').value;
+let monsterSearch = document.querySelector('input');
 let monsterImg = document.querySelector('img');
 let monsterTitle = document.querySelector('.monster-title');
 let monsterAlignment = document.querySelector('.alignment');
@@ -28,13 +28,13 @@ let monsterType = document.querySelector('.type');
 let monsterWisdom = document.querySelector('.wisdom');
 let monsterXp = document.querySelector('.xp');
 
-btn.addEventListener('click', getFetch())
+btn.addEventListener('click', getFetch)
 
 function getFetch() {
-    const monsterIndex = monsterSearch;
+    const monsterIndex = monsterSearch.value;
     const url = `https://www.dnd5eapi.co/api/monsters/${monsterIndex}`;
     fetch(url)
-      .then((res) => res.json()) // parse response as JSON
+      .then((res) => res.json())
       .then((data) => {
         console.log(data);
         // monsterImg.src = data.image
