@@ -9,6 +9,7 @@ body{
     justify-content: center;
     background-color: #2D033B;
     font-family: sans-serif;
+    max-width: 100vw;
 }
 
 .main-container{
@@ -41,7 +42,6 @@ img{
 
 .monster-container{
     padding: 1em;
-    width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
