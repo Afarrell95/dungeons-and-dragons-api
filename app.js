@@ -37,7 +37,7 @@ function getFetch() {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        // monsterImg.src = data.image
+        // monsterImg.src = `https://www.dnd5eapi.co/${data.image}`
         monsterTitle.innerHTML = data.name;
         monsterAlignment.innerHTML = data.alignment;
         monsterArmorClass.innerHTML = data.armor_class;

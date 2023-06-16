@@ -8,6 +8,7 @@ body{
     display: flex;
     justify-content: center;
     background-color: #2D033B;
+    font-family: sans-serif;
 }
 
 .main-container{
@@ -20,16 +21,31 @@ body{
 
 input{
     border-radius: 5px;
+    padding: .8em;
+    font-size: 1rem;
 }
 
 button{
     border-radius: 5px;
+    padding: .8em;
+    background-color: #6a4f7d;
+    font-size: 1rem;
+    color: white;
 }
 
 img{
     max-width: 300px;
-    border: solid black 1px;
+    
     border-radius: 5px;
+}
+
+.monster-container{
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .monster-title{
