@@ -118,7 +118,15 @@ function getFetch() {
         monsterProficiencies.appendChild(valueElement);
       });
 
-      // monsterSenses.innerHTML = data.senses;
+      let darkvisionElement = document.createElement("p");
+      darkvisionElement.textContent = "Darkvision: " + data.senses.darkvision;
+
+      let passivePerceptionElement = document.createElement("p");
+      passivePerceptionElement.textContent =
+        "Passive Perception: " + data.senses.passive_perception;
+
+      monsterSenses.appendChild(darkvisionElement);
+      monsterSenses.appendChild(passivePerceptionElement);
       monsterSize.innerHTML = data.size;
       // monsterSpecialAbilities.innerHTML = data.special_abilities;
       monsterSpeed.innerHTML = data.speed;
