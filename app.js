@@ -44,12 +44,47 @@ function getFetch() {
       console.log(data);
       // monsterImg.src = `https://www.dnd5eapi.co/${data.image}`
       monsterTitle.innerHTML = data.name;
-      monsterActions.innerHTML = data.actions;
+
+      data.actions.forEach((actions) => {
+        let nameElement = document.createElement("h3");
+        nameElement.textContent = actions.name;
+
+        let descElement = document.createElement("p");
+        descElement.textContent = actions.desc;
+
+        let attackBonusElement = document.createElement("p");
+        attackBonusElement.textContent =
+          "Attack Bonus: " + actions.attack_bonus;
+
+        let damageElement = document.createElement("p");
+        damageElement.textContent = "Damage: " + actions.damage;
+
+        monsterActions.appendChild(nameElement);
+        monsterActions.appendChild(descElement);
+        monsterActions.appendChild(attackBonusElement);
+        monsterActions.appendChild(damageElement);
+      });
       monsterAlignment.innerHTML = data.alignment;
-      // monsterArmorClass.innerHTML = data.armor_class;
+
+      data.armor_class.forEach((armor_class) => {
+        let typeElement = document.createElement("h3");
+        typeElement.textContent = armor_class.type;
+
+        let valueElement = document.createElement("p");
+        valueElement.textContent = "Value: " + armor_class.value;
+
+        let armorDetailsElement = document.createElement("p");
+        armorDetailsElement.textContent = "Armor: " + armor_class.armor;
+
+        monsterArmorClass.appendChild(typeElement);
+        monsterArmorClass.appendChild(valueElement);
+        monsterArmorClass.appendChild(armorDetailsElement);
+      });
       monsterChallengeRating.innerHTML = data.challenge_rating;
       monsterCharisma.innerHTML = data.charisma;
+
       // monsterConditionImmunities.innerHTML = data.condition_immunities;
+
       monsterConstitution.innerHTML = data.constitution;
       // monsterDamageImmunities.innerHTML= data.damage_immunities;
       // monsterDamageResistance.innerHTML = data.damage_resistances;
@@ -60,8 +95,29 @@ function getFetch() {
       monsterHitPointsRoll.innerHTML = data.hit_points_roll;
       monsterIntelligence.innerHTML = data.intelligence;
       // monsterLanguages.innerHTML = data.languages;
-      // monsterLegendaryActions.innerHTML = data.legendary_actions;
-      // monsterProficiencies.innerHTML = data.proficiencies;
+
+      data.legendary_actions.forEach((legendary_action) => {
+        let nameElement = document.createElement("h3");
+        nameElement.textContent = legendary_action.name;
+
+        let descElement = document.createElement("p");
+        descElement.textContent = legendary_action.desc;
+
+        monsterLegendaryActions.appendChild(nameElement);
+        monsterLegendaryActions.appendChild(descElement);
+      });
+
+      data.proficiencies.forEach((proficiencies) => {
+        let nameElement = document.createElement("h3");
+        nameElement.textContent = proficiencies.proficiency.name;
+
+        let valueElement = document.createElement("p");
+        valueElement.textContent = "Value: " + proficiencies.value;
+
+        monsterProficiencies.appendChild(nameElement);
+        monsterProficiencies.appendChild(valueElement);
+      });
+
       // monsterSenses.innerHTML = data.senses;
       monsterSize.innerHTML = data.size;
       // monsterSpecialAbilities.innerHTML = data.special_abilities;
