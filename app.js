@@ -94,7 +94,7 @@ function getFetch() {
       monsterHitPoints.innerHTML = data.hit_points;
       monsterHitPointsRoll.innerHTML = data.hit_points_roll;
       monsterIntelligence.innerHTML = data.intelligence;
-      // monsterLanguages.innerHTML = data.languages;
+      monsterLanguages.innerHTML = data.languages;
 
       data.legendary_actions.forEach((legendary_action) => {
         let nameElement = document.createElement("h3");
