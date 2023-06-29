@@ -46,7 +46,7 @@ function getFetch() {
       monsterTitle.innerHTML = data.name;
 
       data.actions.forEach((actions) => {
-        let nameElement = document.createElement("h3");
+        let nameElement = document.createElement("span");
         nameElement.textContent = actions.name;
 
         let descElement = document.createElement("p");
@@ -67,7 +67,7 @@ function getFetch() {
       monsterAlignment.innerHTML = data.alignment;
 
       data.armor_class.forEach((armor_class) => {
-        let typeElement = document.createElement("h3");
+        let typeElement = document.createElement("span");
         typeElement.textContent = armor_class.type;
 
         let valueElement = document.createElement("p");
@@ -97,7 +97,7 @@ function getFetch() {
       monsterLanguages.innerHTML = data.languages;
 
       data.legendary_actions.forEach((legendary_action) => {
-        let nameElement = document.createElement("h3");
+        let nameElement = document.createElement("span");
         nameElement.textContent = legendary_action.name;
 
         let descElement = document.createElement("p");
@@ -108,7 +108,7 @@ function getFetch() {
       });
 
       data.proficiencies.forEach((proficiencies) => {
-        let nameElement = document.createElement("h3");
+        let nameElement = document.createElement("span");
         nameElement.textContent = proficiencies.proficiency.name;
 
         let valueElement = document.createElement("p");
@@ -128,7 +128,18 @@ function getFetch() {
       monsterSenses.appendChild(darkvisionElement);
       monsterSenses.appendChild(passivePerceptionElement);
       monsterSize.innerHTML = data.size;
-      // monsterSpecialAbilities.innerHTML = data.special_abilities;
+
+      data.special_abilities.forEach((special_abilities) => {
+        let nameElement = document.createElement("span");
+        nameElement.textContent = special_abilities.name;
+
+        let descElement = document.createElement("p");
+        descElement.textContent = "Description: " + special_abilities.desc;
+
+        monsterSpecialAbilities.appendChild(nameElement);
+        monsterSpecialAbilities.appendChild(descElement);
+      });
+
       monsterSpeed.innerHTML = data.speed;
       monsterStrength.innerHTML = data.strength;
       monsterType.innerHTML = data.type;
