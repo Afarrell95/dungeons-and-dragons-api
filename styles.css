@@ -18,21 +18,29 @@ body{
   margin:1em;
   padding: 1em;
   border-radius: 5px;
-  max-width: 60%;
+  max-width: 80%;
 }
 
 input{
     border-radius: 5px;
-    padding: .8em;
+    padding: .3em;
     font-size: 1rem;
+  
 }
 
 button{
     border-radius: 5px;
-    padding: .8em;
+    padding: .5em;
     background-color: #18122B;
     font-size: 1rem;
     color: white;
+}
+
+.search-button{
+    width:100%;
+    display: flex;
+    flex-wrap: nowrap;
+    border: solid 1px red
 }
 
 img{
