@@ -37,12 +37,12 @@ btn.addEventListener("click", getFetch);
 
 function getFetch() {
   const monsterIndex = monsterSearch.value.toLowerCase().split(" ").join("-");
-  // const url = `https://www.dnd5eapi.co/api/monsters/${monsterIndex}`;
+  const url = `https://www.dnd5eapi.co/api/monsters/${monsterIndex}`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
-      monsterImg.src = `https://www.dnd5eapi.co/${data.url}.png`;
+      // monsterImg.src = `https://www.dnd5eapi.co/${data.url}.png`;
       monsterTitle.innerHTML = data.name;
 
       data.actions.forEach((actions) => {
