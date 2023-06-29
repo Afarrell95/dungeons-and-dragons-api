@@ -36,7 +36,7 @@ let monsterXp = document.querySelector(".xp");
 btn.addEventListener("click", getFetch);
 
 function getFetch() {
-  const monsterIndex = monsterSearch.value;
+  const monsterIndex = monsterSearch.value.split(" ").join("-");
   const url = `https://www.dnd5eapi.co/api/monsters/${monsterIndex}`;
   fetch(url)
     .then((res) => res.json())
