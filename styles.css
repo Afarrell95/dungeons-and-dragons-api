@@ -18,7 +18,7 @@ body{
   margin:1em;
   padding: 1em;
   border-radius: 5px;
-  max-width: 80%;
+  max-width: 95%;
 }
 
 input{
@@ -60,9 +60,11 @@ img{
 }
 
 h4{
-    color: black;
+    color: red;
+    font-size: 1.2rem;
 }
 
 span{
     color: black;
+    font-weight: bolder;
 }
