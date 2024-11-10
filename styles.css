@@ -4,21 +4,20 @@
     box-sizing: border-box;
 }
 
-body{
+main {
     display: flex;
     justify-content: center;
-    background-color: #18122B;
+    flex-direction: column;
+    background-color: #ffffff;
     font-family: sans-serif;
     max-width: 100vw;
 }
 
-.main-container{
-  justify-content: center;
-  background-color: #ffebda;
+.data-container{
   margin:1em;
   padding: 1em;
   border-radius: 5px;
-  max-width: 95%;
+  min-width: 95%;
 }
 
 input{
@@ -31,15 +30,20 @@ input{
 button{
     border-radius: 5px;
     padding: .5em;
-    background-color: #18122B;
+    background-color: #D4BEE4;
     font-size: 1rem;
-    color: white;
+    color: #3B1E54;
+    border: none;
+    padding: .5em 1em;
 }
 
-.search-button{
+.search-container{
+    background-color: #3B1E54;
     width:100%;
     display: flex;
     flex-wrap: nowrap;
+    padding: 2em;
+    border-radius: 0 0 5px 5px;
 }
 
 img{
@@ -60,7 +64,7 @@ img{
 }
 
 h4{
-    color: red;
+    color: #3B1E54;
     font-size: 1.2rem;
 }
 

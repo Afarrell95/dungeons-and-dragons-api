@@ -37,7 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((data) => {
         clearContent();
 
-        monsterImg.src = `https://www.dnd5eapi.co/${data.url}.png`;
+        console.log(data);
+
+        // monsterImg.src = `https://www.dnd5eapi.co/${data.url}.png`;
         monsterTitle.innerHTML = data.name;
 
         data.actions.forEach((actions) => {
@@ -143,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function clearContent() {
-    monsterImg.src = "";
+    // monsterImg.src = "";
     monsterTitle.innerHTML = "";
     monsterActions.innerHTML = "";
     monsterLegendaryActions.innerHTML = "";

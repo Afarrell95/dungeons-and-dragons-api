@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="main-container">
-      <div class="search-button">
+    <main>
+      <div class="search-container">
         <input
           type="text"
           name=""
@@ -17,75 +17,84 @@
         />
         <button>search</button>
       </div>
-      <div class="monster">
-        <div class="monster-container">
-          <img
-            src="https://i.pinimg.com/originals/48/cb/53/48cb5349f515f6e59edc2a4de294f439.png"
-            alt="monster image"
-          />
-          <span class="monster-title"></span>
+      <div class="data-container">
+        <div class="monster">
+          <div class="monster-container">
+            <img
+              src="https://i.pinimg.com/originals/48/cb/53/48cb5349f515f6e59edc2a4de294f439.png"
+              alt="monster image"
+            />
+            <span class="monster-title"></span>
+            <h4>Type:</h4>
+            <span class="type"></span>
+            <h4>Alignment:</h4>
+            <span class="alignment"></span>
+          </div>
+          <div class="str-dex-con-int-wis-cha">
+            <h4>Strength:</h4>
+            <span class="strength"></span>
+            <h4>Dexterity:</h4>
+            <span class="dexterity"></span>
+            <h4>Constitution:</h4>
+            <span class="constitution"></span>
+            <h4>Intelligence:</h4>
+            <span class="intelligence"></span>
+            <h4>Wisdom:</h4>
+            <span class="wisdom"></span>
+            <h4>Charisma:</h4>
+            <span class="charisma"></span>
+          </div>
+          <div class="armorclass-hitpoints-speed">
+            <h4>Armor Class:</h4>
+            <div class="armor-class"></div>
+            <h4>Hit Points:</h4>
+            <span class="hit-points"></span>
+            <h4>Speed:</h4>
+            <span class="speed"></span>
+          </div>
+          <div class="actions-stats">
+            <h4>Actions:</h4>
+            <div class="monster-actions"></div>
+          </div>
+
+          <h4>Challenge Rating:</h4>
+          <span class="challenge-rating"></span>
+
+          <h4>Condition Immunities:</h4>
+          <span class="condition-immunities"></span>
+
+          <h4>Damage Immunities:</h4>
+          <span class="damage-immunities"></span>
+          <h4>Damage Resistance:</h4>
+          <span class="damage-resistances"></span>
+          <h4>Damage Vulnerabilities:</h4>
+          <span class="damage-vulnerabilities"></span>
+
+          <h4>Hit Dice:</h4>
+          <span class="hit-dice"></span>
+          <h4>Hit Points Roll:</h4>
+          <span class="hit-points-roll"></span>
+
+          <h4>Languages:</h4>
+          <span class="languages"></span>
+          <h4>Legendary Actions:</h4>
+          <div class="legendary-actions"></div>
+
+          <h4>Proficiencies:</h4>
+          <div class="proficiencies"></div>
+
+          <h4>Senses:</h4>
+          <div class="senses"></div>
+
+          <h4>Size:</h4>
+          <span class="size"></span>
+          <h4>Special Abilities:</h4>
+          <span class="special-abilities"></span>
+          <h4>XP:</h4>
+          <span class="xp"></span>
         </div>
-        <h4>Actions:</h4>
-        <div class="monster-actions"></div>
-
-        <h4>Alignment:</h4>
-        <span class="alignment"></span>
-        <h4>Armor Class:</h4>
-        <div class="armor-class"></div>
-
-        <h4>Challenge Rating:</h4>
-        <span class="challenge-rating"></span>
-        <h4>Charisma:</h4>
-        <span class="charisma"></span>
-        <h4>Condition Immunities:</h4>
-        <span class="condition-immunities"></span>
-
-        <h4>Constitution:</h4>
-        <span class="constitution"></span>
-        <h4>Damage Immunities:</h4>
-        <span class="damage-immunities"></span>
-        <h4>Damage Resistance:</h4>
-        <span class="damage-resistances"></span>
-        <h4>Damage Vulnerabilities:</h4>
-        <span class="damage-vulnerabilities"></span>
-
-        <h4>Dexterity:</h4>
-        <span class="dexterity"></span>
-        <h4>Hit Dice:</h4>
-        <span class="hit-dice"></span>
-        <h4>Hit Points:</h4>
-        <span class="hit-points"></span>
-        <h4>Hit Points Roll:</h4>
-        <span class="hit-points-roll"></span>
-        <h4>Intelligence:</h4>
-        <span class="intelligence"></span>
-        <h4>Languages:</h4>
-        <span class="languages"></span>
-        <h4>Legendary Actions:</h4>
-        <div class="legendary-actions"></div>
-
-        <h4>Proficiencies:</h4>
-        <div class="proficiencies"></div>
-
-        <h4>Senses:</h4>
-        <div class="senses"></div>
-
-        <h4>Size:</h4>
-        <span class="size"></span>
-        <h4>Special Abilities:</h4>
-        <span class="special-abilities"></span>
-        <h4>Speed:</h4>
-        <span class="speed"></span>
-        <h4>Strength:</h4>
-        <span class="strength"></span>
-        <h4>Type:</h4>
-        <span class="type"></span>
-        <h4>Wisdom:</h4>
-        <span class="wisdom"></span>
-        <h4>XP:</h4>
-        <span class="xp"></span>
       </div>
-    </div>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
